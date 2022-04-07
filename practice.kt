@@ -1,7 +1,7 @@
+
+    
 fun main() {
     ////////task 2 30-40 mint
-fun main() {
-
     var list = listOf<String>("brainXTechnologies","Hello", "World", "in", "a", "frame" )
     printList(list)
  }
@@ -22,4 +22,3 @@ fun main() {
      print("*")
  }
      
-}
