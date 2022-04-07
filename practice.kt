@@ -1,5 +1,5 @@
 
-////////task 3 
+////////task 3 40, 50 min
 fun main() {
 
     var list = listOf<Int>(1,2,3,4,5,6,7,8 )
