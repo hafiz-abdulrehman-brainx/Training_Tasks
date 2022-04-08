@@ -1,26 +1,28 @@
 ////////task 3 40, 50 min
 fun main() {
 
-    var list = listOf<Int>(3,2,1,4)
-    val indicesForSumValues=GetIndicesForSumValues(list, 5)
-    println(indicesForSumValues.first)
-    println(indicesForSumValues.second)
-
+    getIndicesForSumValues(listOf<Int>(3,3,6,4), 7).apply {
+    println(first)
+    println(second)
+    }
+    
  }
- fun GetIndicesForSumValues(list:List<Int>, x:Int):Pair<Int,Int> {
-     var indiceOfFirstValue:Int = 0
-     var indiceOfSecondValue:Int= 0
-outerloop@ for(i in list.indices)
-     	{
-         for(j in 1 until list.size)
-    		{
-                if((list[i]+list[j])==x)
-                 	{
-                  indiceOfFirstValue = i
-                  indiceOfSecondValue = j
-                  break@outerloop
-                 	}                
-         	}
-     	}
-     return Pair(indiceOfFirstValue,indiceOfSecondValue)
+ fun getIndicesForSumValues(list:List<Int>, x:Int):Pair<Int,Int> {
+     var FirstValue:Int = 0
+     var SecondValue:Int= 0
+     list.apply {     
+        outerloop@ for(i in indices)
+        {
+        for(j in 1 until size)
+        {
+            if( ( get(i)+get(j) )==x)
+                    {
+                FirstValue = i
+                SecondValue = j
+                break@outerloop
+                    }                
+            }
+        }
+     }
+     return Pair(FirstValue,SecondValue)
  }
