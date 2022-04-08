@@ -2,7 +2,7 @@
     
 fun main() {
     ////////task 2 30-40 mint
-    var list = listOf<String>("brainXTechnologies","Hello", "World", "in", "a", "frame" )
+    var list = listOf<String>("brainXTechnologies-brainXTechnologies","brainXTechnologies","Hello", "World", "in", "a", "frame" )
     printList(list)
  }
  fun printList(list:List<String>){
@@ -11,7 +11,7 @@ fun main() {
           if(longest<element.length)
          longest = element.length
      }
-     var formatTemplate = "%${longest}s"
+     var formatTemplate = "%${-longest}s"
      for(i in 1..longest+2)
      print("*")
      for (element in list){
