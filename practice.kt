@@ -1,16 +1,16 @@
 fun main() {
     
     ///////////task 1 3 min
-   for(i in 1..200)
+   for(number in 1..200)
     {
-        if(i%5==0 && i%7==0)
+        if(number%5==0 && number%7==0)
         println("FooBar")
-        else if (i%5==0)
+        else if (number%5==0)
         println("Foo")
-        else if(i%7==0)
+        else if(number%7==0)
         println("Boo")
         else
-        println(i)
+        println(number)
         
     }
 }
